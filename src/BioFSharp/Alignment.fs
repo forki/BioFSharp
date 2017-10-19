@@ -16,4 +16,5 @@ module Alignment =
         let mapSequences (mapping: 'Sequence -> 'mSequence) (alignment: Alignment<'Sequence,_>) =       
             {MetaData = alignment.MetaData;
             AlignedSequences = List.map (mapping) alignment.AlignedSequences}
-    
+        
+        let testFunction = (+)
